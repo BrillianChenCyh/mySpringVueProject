@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>饿了么demo</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../static/elementui/index.css">
+</head>
+<body>
+<div id="app">
+    <el-button @click="visible = true">Button</el-button>
+    <el-dialog :visible.sync="visible" title="Hello world">
+        <p>Try Element</p>
+    </el-dialog>
+    <el-button type="primary" icon="el-icon-edit"></el-button>
+    <el-button type="primary" icon="el-icon-share"></el-button>
+    <el-button type="primary" icon="el-icon-delete"></el-button>
+    <el-button type="primary" icon="el-icon-search">搜索</el-button>
+    <el-button type="primary">上传<i class="el-icon-upload el-icon--right"></i></el-button>
+    <el-form ref="form" :model="form" label-width="80px">
+        <el-form-item label="活动名称">
+            <el-input v-model="form.name"></el-input>
+        </el-form-item>
+        <el-form-item label="活动区域">
+            <el-select v-model="form.region" placeholder="请选择活动区域">
+                <el-option label="区域一" value="shanghai"></el-option>
+                <el-option label="区域二" value="beijing"></el-option>
+            </el-select>
+        </el-form-item>
+        <el-form-item label="活动时间">
+            <el-col :span="11">
+                <el-date-picker type="date" placeholder="选择日期" v-model="form.date1"
+                                style="width: 100%;"></el-date-picker>
+            </el-col>
+            <el-col class="line" :span="2">-</el-col>
+            <el-col :span="11">
+                <el-time-picker placeholder="选择时间" v-model="form.date2" style="width: 100%;"></el-time-picker>
+            </el-col>
+        </el-form-item>
+        <el-form-item label="即时配送">
+            <el-switch v-model="form.delivery"></el-switch>
+        </el-form-item>
+        <el-form-item label="活动性质">
+            <el-checkbox-group v-model="form.type">
+                <el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
+                <el-checkbox label="地推活动" name="type"></el-checkbox>
+                <el-checkbox label="线下主题活动" name="type"></el-checkbox>
+                <el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
+            </el-checkbox-group>
+        </el-form-item>
+        <el-form-item label="特殊资源">
+            <el-radio-group v-model="form.resource">
+                <el-radio label="线上品牌商赞助"></el-radio>
+                <el-radio label="线下场地免费"></el-radio>
+            </el-radio-group>
+        </el-form-item>
+        <el-form-item label="活动形式">
+            <el-input type="textarea" v-model="form.desc"></el-input>
+        </el-form-item>
+        <el-form-item>
+            <el-button type="primary" @click="onSubmit">立即创建</el-button>
+            <el-button>取消</el-button>
+        </el-form-item>
+    </el-form>
+    <el-steps :active="active" finish-status="success">
+        <el-step title="步骤 1"></el-step>
+        <el-step title="步骤 2"></el-step>
+        <el-step title="步骤 3"></el-step>
+    </el-steps>
+    <el-button style="margin-top: 12px;" @click="next">下一步</el-button>
+    <el-radio-group v-model="direction">
+        <el-radio label="ltr">从左往右开</el-radio>
+        <el-radio label="rtl">从右往左开</el-radio>
+        <el-radio label="ttb">从上往下开</el-radio>
+        <el-radio label="btt">从下往上开</el-radio>
+    </el-radio-group>
+
+    <el-button @click="drawer = true" type="primary" style="margin-left: 16px;">
+        点我打开
+    </el-button>
+    <el-drawer
+            title="我是标题"
+            :visible.sync="drawer"
+            :direction="direction"
+            :before-close="handleClose">
+        <span>我来啦!</span>
+    </el-drawer>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="../static/vue/vue.js"></script>
+<!-- import JavaScript -->
+<script src="../static/elementui/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                visible: false,
+                form: {
+                    name: '',
+                    region: '',
+                    date1: '',
+                    date2: '',
+                    delivery: false,
+                    type: [],
+                    resource: '',
+                    desc: '',
+                },
+                active: 1,
+                drawer: false,
+                direction: 'rtl',
+            }
+        },
+        methods: {
+            onSubmit:function() {
+                console.log('submit!');
+            },
+            next:function() {
+                if (this.active++ > 2) this.active = 0;
+            }
+        }
+    })
+</script>
+</html>

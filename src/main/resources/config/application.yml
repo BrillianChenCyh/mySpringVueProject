@@ -1,0 +1,77 @@
+server:
+  port: 8082
+#配置服务器日志输出
+logging:
+  config: classpath:config/log-config.xml
+beetl:
+  templatesPath: views
+beetlsql:
+  daoSuffix: Dao
+  sqlPath: mappings
+  ds:
+    a:
+      basePackage: com.cyh.project.onedao.
+    b:
+      basePackage: com.cyh.project.twodao.
+  mutiple:
+    datasource: a,b
+spring:
+  datasource:
+    a:
+      type: mysql
+      url: jdbc:mysql://127.0.0.1/test?useSSL=false&useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+      driver: com.mysql.jdbc.Driver
+    b:
+      type: mysql
+      url: jdbc:mysql://127.0.0.1/test2?useSSL=false&useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+      driver: com.mysql.jdbc.Driver
+    c:
+      type: sqlserver
+      driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      url: jdbc:sqlserver://localhost;DatabaseName=demo
+      username: sa
+      password: root
+  mail:
+    host: smtp.qq.com
+    username: 2565696178@qq.com
+    password: tisbkmrrrqegeabi
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  servlet:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 500Mb
+#redis单机配置
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    timeout: 3000
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1
+        max-active: 8
+    password: root
+#redis集群配置
+
+#activemq配置
+  activemq:
+    broker-url: tcp://localhost:61616
+    in-memory: true
+    pool:
+      enabled: false
+    user: admin
+    password: admin
+
+
