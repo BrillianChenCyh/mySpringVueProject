@@ -1,0 +1,491 @@
+[
+  {
+    "name": "物联网实时监控",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "综合展示",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "GIS展示",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "物联网工况模拟",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "视频监控",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "数据质控",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "数据审核",
+        "parentId": "1",
+        "menuId": "2",
+        "childMenu": [
+          {
+            "name": "数据自动审核",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "数据初审",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "数据复审",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "辅助审核",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "远程质量控制",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "审核情况统计",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "两率统计",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "审核日志",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "数据手工回补",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "运维管理",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "日常任务",
+        "parentId": "1",
+        "menuId": "2",
+        "childMenu": [
+          {
+            "name": "运维计划",
+            "parentId": "1",
+            "menuId": "2",
+            "url": "http://218.26.86.49:8900/processManager/plan"
+          },
+          {
+            "name": "运维任务",
+            "parentId": "1",
+            "menuId": "2",
+            "url": "http://218.26.86.49:8900/operations/operationTask"
+          },
+          {
+            "name": "任务统计",
+            "parentId": "1",
+            "menuId": "2",
+            "url": "http://218.26.86.49:8900/processManager/record"
+          },
+          {
+            "name": "运维问题整改",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "任务类别配置",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "检查计划",
+        "parentId": "1",
+        "menuId": "2",
+        "childMenu": [
+          {
+            "name": "工作事项",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "检查计划",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "检查任务",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "任务统计",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "任务类别配置",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "其他运维事项",
+        "parentId": "1",
+        "menuId": "2",
+        "childMenu": [
+          {
+            "name": "考勤签到",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "停电记录",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "运维单位",
+            "parentId": "1",
+            "menuId": "2",
+            "url": "http://218.26.86.49:8900/operations/resources/company"
+          },
+          {
+            "name": "运维人员",
+            "parentId": "1",
+            "menuId": "2",
+            "url": "http://218.26.86.49:8900/operations/resources/person"
+          },
+          {
+            "name": "微信推送",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "绩效初核",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "检查打分",
+        "parentId": "1",
+        "menuId": "2",
+        "childMenu": [
+          {
+            "name": "运维考核",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "质控考核",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "两率统计",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "运维统计",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "质控检查统计",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          },
+          {
+            "name": "考核评分",
+            "parentId": "1",
+            "menuId": "2",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "统计分析",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "运维排名",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "运维考核报告",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "运行质量报告",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "监控数据使用成效",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "统计报告",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "站点设备",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "站点信息管理",
+        "parentId": "1",
+        "menuId": "2",
+        "url": "http://218.26.86.49:8900/module/site"
+      },
+      {
+        "name": "设备厂家",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "站点设备",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "设备使用",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "备品备件",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "设备生命周期",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "设备评价",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "数据查询统计",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "单点多参",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "多点多参",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "日历",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "首要污染物",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "水质综合指数",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "水质分析与评价",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "水质类别",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "超标污染物分析",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "水质达标率",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "水质趋势分析",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "数据比较分析",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "考核排名",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "月度考核排名",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "年度考核排名",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "实际要求进行统计排名",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "name": "自定义报表",
+    "parentId": "0",
+    "menuId": "1",
+    "childMenu": [
+      {
+        "name": "日报",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "月报",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "年报",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "丰水期",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      },
+      {
+        "name": "枯水期",
+        "parentId": "1",
+        "menuId": "2",
+        "url": ""
+      }
+    ]
+  }
+]

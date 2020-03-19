@@ -12,7 +12,7 @@ import javax.jms.Destination;
  *  @Date: 2019/12/18 18:04
  *  @Description: 生产者
  */
-@Component
+//@Component
 public class Product {
 
     @Autowired

@@ -38,7 +38,7 @@ public class DruidConfig1 {
 
     @Bean
 	@Primary
-    public ServletRegistrationBean druidServlet() {
+    public ServletRegistrationBean druidServlet1() {
         ServletRegistrationBean reg = new ServletRegistrationBean();
         reg.setServlet(new StatViewServlet());
         reg.addUrlMappings("/druid/*");
@@ -48,7 +48,7 @@ public class DruidConfig1 {
 
 	@Bean
 	@Primary
-	public FilterRegistrationBean druidStatFilter() {
+	public FilterRegistrationBean druidStatFilter1() {
 		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new WebStatFilter());
 		filterRegistrationBean.setName("druidStatFilter");
 		filterRegistrationBean.addUrlPatterns("/*");

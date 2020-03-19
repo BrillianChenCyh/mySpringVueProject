@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  *  @Date: 2020/3/7 17:39
  *  @Description: 消费者
  */
-@Component
+//@Component
 public class Consumer {
 
     @JmsListener(destination = "myqueues")

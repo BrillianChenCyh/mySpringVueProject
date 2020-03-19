@@ -45,8 +45,8 @@ public class DemoController {
     @Autowired
     private EmailService emailService;
 
-    @Autowired
-    private Product product;
+//    @Autowired
+//    private Product product;
 
     @GetMapping("/index")
     public String index() {
@@ -188,7 +188,7 @@ public class DemoController {
         // 点对点消息
         Destination destination = new ActiveMQQueue("myqueues");
         for (int i = 0; i < 3; i++) {
-            product.sendMessage(destination, "发消息啦!");
+//            product.sendMessage(destination, "发消息啦!");
         }
         return "ok";
     }

@@ -1,0 +1,54 @@
+spring:
+  datasource:
+    a:
+      type: mysql
+      url: jdbc:mysql://192.168.1.103/test?useSSL=false&useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+      driver: com.mysql.jdbc.Driver
+    b:
+      type: mysql
+      url: jdbc:mysql://192.168.1.103/test2?useSSL=false&useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+      driver: com.mysql.jdbc.Driver
+    c:
+      type: sqlserver
+      driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      url: jdbc:sqlserver://192.168.1.103;DatabaseName=demo
+      username: sa
+      password: root
+  mail:
+    host: smtp.qq.com
+    username: 2565696178@qq.com
+    password: tisbkmrrrqegeabi
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  #redis单机配置
+  redis:
+    database: 0
+    host: 192.168.1.103
+    port: 6379
+    timeout: 3000
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1
+        max-active: 8
+    password: root
+  #redis集群配置
+
+  #activemq配置
+  activemq:
+    broker-url: tcp://192.168.1.103:61616
+    in-memory: true
+    pool:
+      enabled: false
+    user: admin
+    password: admin

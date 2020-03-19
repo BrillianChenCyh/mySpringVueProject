@@ -35,7 +35,7 @@ public class DruidConfig2 {
     private Logger logger = LoggerFactory.getLogger(DruidConfig2.class);
 
     @Bean
-    public ServletRegistrationBean druidServlet() {
+    public ServletRegistrationBean druidServlet2() {
         ServletRegistrationBean reg = new ServletRegistrationBean();
         reg.setServlet(new StatViewServlet());
         reg.addUrlMappings("/druid/*");
@@ -44,7 +44,7 @@ public class DruidConfig2 {
     }
 
 	@Bean
-	public FilterRegistrationBean druidStatFilter() {
+	public FilterRegistrationBean druidStatFilter2() {
 		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new WebStatFilter());
 		filterRegistrationBean.setName("druidStatFilter");
 		filterRegistrationBean.addUrlPatterns("/*");

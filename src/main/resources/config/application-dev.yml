@@ -1,0 +1,64 @@
+spring:
+  datasource:
+    a:
+      type: mysql
+      url: jdbc:mysql://localhost/test?useSSL=false&useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+      driver: com.mysql.jdbc.Driver
+    b:
+      type: mysql
+      url: jdbc:mysql://localhost/test2?useSSL=false&useUnicode=true&serverTimezone=UTC&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+      driver: com.mysql.jdbc.Driver
+    c:
+      type: sqlserver
+      driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      url: jdbc:sqlserver://localhost;DatabaseName=demo
+      username: sa
+      password: root
+  mail:
+    host: smtp.qq.com
+    username: 2565696178@qq.com
+    password: tisbkmrrrqegeabi
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  #redis单机配置
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    timeout: 3000
+    jedis:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1
+        max-active: 8
+    password: root
+  #redis集群配置
+
+  #activemq配置
+  activemq:
+    broker-url: tcp://localhost:61616
+    in-memory: true
+    pool:
+      enabled: false
+    user: admin
+    password: admin
+  #mqtt配置
+mqtt:
+  #MQTT-服务器连接地址，如果有多个，用逗号隔开，如：tcp://127.0.0.1:61613，tcp://192.168.2.133:61613
+  host: tcp://mqtt1.leitesoft.com:1883
+  #MQTT-默认的消息推送主题，实际可在调用接口时指定
+  topic: wryonline/#
+  username: wuranyuan
+  password: wuranyuan@123!
+  timeout: 10
+  keepalive: 20
